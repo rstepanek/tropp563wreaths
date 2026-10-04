@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gift It Forward – TR563MN001</title>
 <style>
+*{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:24px;background:#f6f7f9;color:#111}
 .container{max-width:520px;margin:auto;background:#fff;padding:24px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
 h1{margin:0 0 8px;font-size:22px}
@@ -13,8 +14,9 @@ p{margin:0 0 16px;color:#444}
 .primary{background:#1f5c39;color:#fff}
 .secondary{background:#e9ecef;color:#111}
 .row{display:flex;gap:8px;margin:12px 0}
-.code{flex:1;padding:12px;border:1px solid #ddd;border-radius:8px;background:#fafafa;font-family:monospace}
-.copy{padding:12px 14px;border-radius:8px;border:1px solid #ddd;background:#fff}
+.code{flex:1;padding:12px;border:1px solid #ddd;border-radius:8px;background:#fafafa;font-family:monospace;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.copy{padding:12px 14px;border-radius:8px;border:0;background:#1f5c39;color:#fff;font-weight:600;cursor:pointer}
+.copy:hover{background:#2a7a4a}
 .small{font-size:12px;color:#666;margin-top:16px}
 </style>
 </head>
