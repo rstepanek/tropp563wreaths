@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gift It Forward – TR563MN001</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:24px;background:#f6f7f9;color:#111}
+.container{max-width:520px;margin:auto;background:#fff;padding:24px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+h1{margin:0 0 8px;font-size:22px}
+p{margin:0 0 16px;color:#444}
+.btn{display:block;width:100%;padding:14px 16px;border-radius:12px;border:0;font-size:16px;font-weight:600;text-align:center;text-decoration:none;margin:12px 0}
+.primary{background:#1f5c39;color:#fff}
+.secondary{background:#e9ecef;color:#111}
+.row{display:flex;gap:8px;margin:12px 0}
+.code{flex:1;padding:12px;border:1px solid #ddd;border-radius:8px;background:#fafafa;font-family:monospace}
+.copy{padding:12px 14px;border-radius:8px;border:1px solid #ddd;background:#fff}
+.small{font-size:12px;color:#666;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="container">
+<div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px">
+<img src="https://giftitforward.com/img/gif-hero.webp" alt="Wreath" style="height:91px;width:auto;border-radius:8px">
+<img src="bsalogo2.png" alt="Boy Scouts of America" style="height:78px;width:auto">
+</div>
+<h1>Support Isaac Stepanek</h1>
+<p>Fundraising code <strong>TR563MN001</strong> – Referring member <strong>Isaac Stepanek</strong></p>
+<a class="btn primary" href="https://giftitforward.com/" target="_blank" rel="noopener">Open Gift It Forward</a>
+<div class="row">
+<div class="code" id="code">TR563MN001</div>
+<button class="copy" onclick="copyText('TR563MN001','code')">Copy code</button>
+</div>
+<div class="row">
+<div class="code" id="name">Isaac Stepanek</div>
+<button class="copy" onclick="copyText('Isaac Stepanek','name')">Copy name</button>
+</div>
+<p class="small">1. Tap Open Gift It Forward. 2. Tap “Enter your Fundraising Code”. 3. Paste code and name, then Apply Now.</p>
+</div>
+<script>
+function copyText(text, id){
+  navigator.clipboard.writeText(text).then(()=>{
+    const el=document.getElementById(id);
+    const old=el.textContent;
+    el.textContent='Copied!';
+    setTimeout(()=>el.textContent=old,1200);
+  });
+}
+</script>
+</body>
+</html>
